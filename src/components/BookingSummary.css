@@ -1,0 +1,19 @@
+.container-booking {
+  margin: 0 auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+}
+
+.display-4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+img {
+  margin-bottom: 20px;
+}
