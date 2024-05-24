@@ -1,5 +1,5 @@
 export const ReservationDetail = ({
-  reservationNum,
+  reservationNumber,
   reservationStartDate,
   reservationEndDate,
   reservationAdults,
@@ -11,8 +11,10 @@ export const ReservationDetail = ({
 }) => {
   return (
     <div className="summary__detail mb-4 col-md-6">
-      <h3>Detail rezervace</h3>
-      <div className="summary__number">Číslo: {reservationNum}</div>
+      <h3 className="summary__detail_heading lead">
+        <strong>Detail rezervace</strong>
+      </h3>
+      <div className="summary__number">Číslo: {reservationNumber}</div>
       <div className="summary__dates">
         Pobyt: {reservationStartDate} - {reservationEndDate}
       </div>

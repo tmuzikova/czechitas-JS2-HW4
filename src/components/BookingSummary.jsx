@@ -8,23 +8,23 @@ import { HotelInfo } from "./HotelInfo";
 import { DoplnkoveSluzby } from "./DoplnkoveSluzby";
 import { ReservationDetail } from "./ReservationDetail";
 
-export const BookingSummary = () => {
+export const BookingSummary = ({
+  reservationNumber,
+  reservationStartDate,
+  reservationEndDate,
+  reservationAdults,
+  reservationChildren,
+  reservationCatering,
+  reservationPrice,
+  reservationCheckInTime,
+  reservationCheckOutTime,
+}) => {
   const roomImgUrl =
     "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=960";
 
   const roomNum = 2;
   const roomName = "Dvoulůžkový s dětskou přistýlkou";
   const roomPrice = 1800;
-
-  const reservationNum = "459787 - 745";
-  const reservationStartDate = "13.6.2023";
-  const reservationEndDate = "17.6.2026";
-  const reservationAdults = 2;
-  const reservationChildren = 1;
-  const reservationCatering = "žádné";
-  const reservationPrice = 7200;
-  const reservationCheckInTime = "18:00";
-  const reservationCheckOutTime = "10:00";
 
   const parkingPrice = 200;
   const breakfastPrice = 150;
@@ -53,7 +53,7 @@ export const BookingSummary = () => {
 
       <div className="row">
         <ReservationDetail
-          reservationNum={reservationNum}
+          reservationNumber={reservationNumber}
           reservationStartDate={reservationStartDate}
           reservationEndDate={reservationEndDate}
           reservationAdults={reservationAdults}
